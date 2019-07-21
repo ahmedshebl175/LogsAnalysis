@@ -1,6 +1,10 @@
 # LogsAnalysis
 First Project - Nano Degree -1MAC - UDACITY
 
+I just connect to the DB "news" 
+then execute 3 queries fetch the results of the 3 queries in three variables(result1- result2- result3)
+then with 3 for-loops I print the results in the command line program with a title for each.
+
 # The views that I created in the database "news":
 
 # log_slug: To set up  "path" field in "log" table to a relation with "slug" field in the "articles" table
