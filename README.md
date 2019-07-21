@@ -1,6 +1,8 @@
 # LogsAnalysis
 First Project - Nano Degree -1MAC - UDACITY
 
+I used python 2 because it is what is on the VM.
+
 I just connect to the DB "news" 
 then execute 3 queries fetch the results of the 3 queries in three variables(result1- result2- result3)
 then with 3 for-loops I print the results in the command line program with a title for each.
