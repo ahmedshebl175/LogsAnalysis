@@ -1,4 +1,4 @@
-# Database code for the DB news
+# Code for the DB news (python 2)
 
 import psycopg2
 
