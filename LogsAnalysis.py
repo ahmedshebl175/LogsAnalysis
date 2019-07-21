@@ -4,20 +4,24 @@ import psycopg2
 
 DBNAME = "news"
 
+# Connect to the DB "news"
 db = psycopg2.connect(database=DBNAME)
 c = db.cursor()
 
-c.execute("SELECT * FROM most_three_articles")    # requirement 1
+# requirement 1: the most popular three articles of all time
+c.execute("SELECT * FROM most_three_articles")    
 result1 = c.fetchall()
 
+# requirement 2: the most popular article authors of all time
 c.execute("SELECT * FROM most_all_authors")    # requirement 2
 result2 = c.fetchall()
 
+# requirement 3: the days did more than 1% of requests lead to errors
 c.execute("SELECT * FROM more_errors")    # requirement 3
 result3 = c.fetchall()
 
 db.close()
-print()
+print
 print("The most popular three articles of all time")
 print("--------------------------------------------")
 for row in result1:
