@@ -53,5 +53,6 @@ print
 print("Days did more than 1% of requests lead to errors")
 print("--------------------------------------------")
 for row in result3:
-    print '{day} - {percent} %errors'.format(day=row[0], percent=round(row[1], 1))
+    print '{day} - {percent} %errors'.format(day=row[0],
+                                             percent=round(row[1], 1))
 print
